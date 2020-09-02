@@ -1,31 +1,3 @@
-"""
-1. make turns, boolean
-2. define illegal moves
-3. remove checker on move
-4. king checker piece
-
-homework:
-work on validity checks and legal move checks
-"""
-
-"""
-write a different way of doing 
-if not (a and b):
-
-
-if not a and not b	
-only true if both are false.
-
-# if not (a and b):
-
-only false if  both true
-
-"""
-"""
-double jumps
-king checker
-"""
-
 class CheckerBoard:
 	#similar to chess A1 A2 B3 ...
 	def __init__(self):
@@ -182,33 +154,3 @@ while player.playerWin() == False:
 	player.printBoard()
 
 
-#assert(not player.validMove("g1", "f2"))
-#assert(not player.validMove("a1", "a2"))
-#assert(not player.validMove("g1", "f2"))
-
-
-
-
-
-
-
-
-"""
-indicie = 0
-		list_indicie = 0
-		num = 0
-		for i in self.board:
-			if num < 3:
-				num += 1
-				for j in i:
-					if list_indicie % 2 == 0:
-						if indicie % 2 == 0:
-							i[indicie] = "o"
-						indicie += 1
-					else:
-						if indicie % 2 == 1:
-							i[indicie] = "o"
-						indicie += 1
-			indicie = 0
-			list_indicie += 1
-"""
